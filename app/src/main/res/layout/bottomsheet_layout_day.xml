@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/hm_dialog_bg"
+    android:padding="@dimen/_20sdp">
+
+    <ImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_3sdp"
+        android:src="@drawable/hm_line"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hari Bekerja"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/_15ssp"
+        android:layout_gravity="center"
+        android:layout_marginVertical="@dimen/_10sdp"/>
+
+    <LinearLayout
+        android:id="@+id/layoutSenin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="@dimen/_3sdp"
+        android:padding="@dimen/_10sdp">
+
+        <CheckBox
+            android:id="@+id/checkboxSenin"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Senin"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutSelasa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="@dimen/_3sdp"
+        android:padding="@dimen/_10sdp">
+
+        <CheckBox
+            android:id="@+id/checkboxSelasa"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selasa"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutRabu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="@dimen/_3sdp"
+        android:padding="@dimen/_10sdp">
+
+        <CheckBox
+            android:id="@+id/checkboxRabu"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rabu"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutKamis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="@dimen/_3sdp"
+        android:padding="@dimen/_10sdp">
+
+        <CheckBox
+            android:id="@+id/checkboxKamis"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kamis"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutJumat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="@dimen/_3sdp"
+        android:padding="@dimen/_10sdp">
+
+        <CheckBox
+            android:id="@+id/checkboxJumat"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jumat"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutSabtu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="@dimen/_3sdp"
+        android:padding="@dimen/_10sdp">
+
+        <CheckBox
+            android:id="@+id/checkboxSabtu"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sabtu"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutMinggu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="@dimen/_3sdp"
+        android:padding="@dimen/_10sdp">
+
+        <CheckBox
+            android:id="@+id/checkboxMinggu"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minggu"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_pilih"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pilih"
+        android:backgroundTint="@color/black" />
+
+</LinearLayout>

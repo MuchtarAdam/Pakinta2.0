@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PickWorkerActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_topbar_pilih_pekerja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/btn_back_detail_waktu_pekerja"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/round_arrow_back_24"
+            android:layout_marginEnd="@dimen/_5sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih Pekerja"
+            android:textSize="@dimen/_12ssp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/line_pilih_pekerja"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:src="@drawable/hm_line"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_below="@+id/ll_topbar_pilih_pekerja"/>
+
+    <LinearLayout
+        android:id="@+id/container_pick_worker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/line_pilih_pekerja"
+        android:layout_above="@id/bottom_result_bar"
+        android:layout_margin="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+             <androidx.recyclerview.widget.RecyclerView
+                 android:id="@+id/rv_pilih_pekerja"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 tools:listitem="@layout/item_pick_worker" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_result_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/outline_people_alt_24"
+                    android:layout_marginEnd="@dimen/_5sdp"/>
+                <TextView
+                    android:id="@+id/tv_amount_worker_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_marginEnd="@dimen/_2sdp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Orang"
+                    android:layout_marginEnd="@dimen/_5sdp"/>
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/outline_edit_calendar_24"
+                    android:layout_marginEnd="@dimen/_5sdp"/>
+                <TextView
+                    android:id="@+id/tv_total_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_marginEnd="@dimen/_2sdp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hari"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estimasi: Rp."
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_2sdp"/>
+                <TextView
+                    android:id="@+id/tv_total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp"
+                    android:text=""/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_lanjut_to_pembayaran"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Lanjut"
+            android:layout_weight="2"
+            android:backgroundTint="@color/black" />
+
+    </LinearLayout>
+
+</RelativeLayout>
